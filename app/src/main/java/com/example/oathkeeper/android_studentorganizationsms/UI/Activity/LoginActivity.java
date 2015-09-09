@@ -1,9 +1,16 @@
-package com.example.oathkeeper.android_studentorganizationsms;
+package com.example.oathkeeper.android_studentorganizationsms.UI.Activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.oathkeeper.android_studentorganizationsms.R;
+
+/**
+ * 登陆、注册的Activity
+ * Created by Oathkeeper on 2015/9/7
+ */
 
 public class LoginActivity extends AppCompatActivity {
 

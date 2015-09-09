@@ -1,4 +1,4 @@
-package com.example.oathkeeper.android_studentorganizationsms;
+package com.example.oathkeeper.android_studentorganizationsms.UI.Fragment;
 
 import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
@@ -23,10 +23,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.oathkeeper.android_studentorganizationsms.R;
+
 /**
- * Fragment used for managing interactions for and presentation of a navigation drawer.
- * See the <a href="https://developer.android.com/design/patterns/navigation-drawer.html#Interaction">
- * design guidelines</a> for a complete explanation of the behaviors implemented here.
+ * Fragment
+ * Created by Oathkeeper on 2015/9/9.
  */
 public class NavigationDrawerFragment extends Fragment {
 

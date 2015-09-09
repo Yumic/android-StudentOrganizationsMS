@@ -1,23 +1,24 @@
-package com.example.oathkeeper.android_studentorganizationsms;
+package com.example.oathkeeper.android_studentorganizationsms.UI.Activity;
 
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
-import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.support.v4.widget.DrawerLayout;
-import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
+import com.example.oathkeeper.android_studentorganizationsms.R;
+import com.example.oathkeeper.android_studentorganizationsms.UI.Fragment.NavigationDrawerFragment;
+/**
+ * 主界面Activity
+ * Created by Oathkeeper on 2015/9/7.
+ */
 public class MainActivity extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
