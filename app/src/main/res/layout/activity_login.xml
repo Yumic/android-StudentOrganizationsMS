@@ -14,20 +14,22 @@
         android:ems="10"
         android:id="@+id/editText_school_number"
         android:layout_marginTop="139dp"
-        android:text="请输入学号"
+        android:hint="请输入学号"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textColor="@color/text_color_light"
+        android:textColorHint="@color/text_color_light"
         />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/text_color_light"
+        android:textColorHint="@color/text_color_light"
         android:inputType="textPassword"
         android:ems="10"
         android:id="@+id/editText_password"
-        android:text="请输入密码"
+        android:hint="请输入密码"
         android:layout_below="@+id/editText_school_number"
         android:layout_centerHorizontal="true" />
 

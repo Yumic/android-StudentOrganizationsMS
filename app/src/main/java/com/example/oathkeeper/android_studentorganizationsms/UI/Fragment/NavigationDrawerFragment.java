@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.app.Activity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
-//import android.support.v4.app.ActionBarDrawerToggle;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -26,13 +25,13 @@ import android.widget.Toast;
 import com.example.oathkeeper.android_studentorganizationsms.R;
 
 /**
- * Fragment
+ * NavigationFragment 导航用
  * Created by Oathkeeper on 2015/9/9.
  */
 public class NavigationDrawerFragment extends Fragment {
 
     /**
-     * Remember the position of the selected item.
+     * 记录选中的Item的位置
      */
     private static final String STATE_SELECTED_POSITION = "selected_navigation_drawer_position";
 
@@ -43,12 +42,12 @@ public class NavigationDrawerFragment extends Fragment {
     private static final String PREF_USER_LEARNED_DRAWER = "navigation_drawer_learned";
 
     /**
-     * A pointer to the current callbacks instance (the Activity).
+     * 指向目前的 callbacks实例(the Activity).
      */
     private NavigationDrawerCallbacks mCallbacks;
 
     /**
-     * Helper component that ties the action bar to the navigation drawer.
+     * 触发器，联动ActionBar和drawer
      */
     private ActionBarDrawerToggle mDrawerToggle;
 
@@ -107,6 +106,8 @@ public class NavigationDrawerFragment extends Fragment {
                         getString(R.string.title_section1),
                         getString(R.string.title_section2),
                         getString(R.string.title_section3),
+                        getString(R.string.title_section4),
+                        getString(R.string.title_section5),
                 }));
         mDrawerListView.setItemChecked(mCurrentSelectedPosition, true);
         return mDrawerListView;
