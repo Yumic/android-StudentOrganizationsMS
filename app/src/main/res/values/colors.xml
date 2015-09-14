@@ -3,4 +3,6 @@
     <color name="main_color">#FA6E86</color>
     <color name="text_color_dark">#3e3e3e</color>
     <color name="text_color_light">#f3f3f3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="shadow">#6e6e6e</color>
 </resources>

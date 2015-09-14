@@ -7,8 +7,86 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="你好"
+        android:text="软件园校区中秋晚会募集演员"
+        android:id="@+id/textView_event_name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始:2015.09.10 08:00"
+        android:id="@+id/textView_event_start_time"
+        android:layout_below="@+id/textView_event_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="结束:2015.09.16 20:00"
+        android:id="@+id/textView_event_end_time"
+        android:layout_below="@+id/textView_evnet_category"
+        android:layout_alignRight="@+id/textView_evnet_category"
+        android:layout_alignEnd="@+id/textView_evnet_category" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="地区:软件园校区"
+        android:id="@+id/textView_event_location"
+        android:layout_below="@+id/textView_event_end_time"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="演出"
+        android:textColor="@color/main_color"
+        android:id="@+id/textView_evnet_category"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="已有7人报名"
         android:id="@+id/textView"
-        android:layout_centerVertical="true"
+        android:textColor="@color/main_color"
+        android:layout_below="@+id/textView_detail"
+        android:layout_alignRight="@+id/textView_detail"
+        android:layout_alignEnd="@+id/textView_detail"
+        android:layout_marginTop="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="中秋晚会即将袭来！你想在舞台上展示自己的风采吗？想让同学们尽快认识你吗？只需动动手指点击报名参与，我们将会通知您初审地点与时间。文艺部中信希望可以在舞台上看到你们的表演！"
+        android:id="@+id/textView_detail"
+        android:layout_below="@+id/textView_event_location"
+        android:layout_alignLeft="@+id/textView_event_location"
+        android:layout_alignStart="@+id/textView_event_location" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:text="点我参加"
+        android:background="@color/main_color"
+        android:textColor="@color/text_color_light"
+        android:id="@+id/button_attend"
+        android:layout_alignTop="@+id/textView"
         android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/textView_event_name"
+        />
 </RelativeLayout>

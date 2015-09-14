@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
-import com.example.oathkeeper.android_studentorganizationsms.Adapter.NormalRecyclerViewAdapter;
+import com.example.oathkeeper.android_studentorganizationsms.Adapter.BrowserAdapter;
 import com.example.oathkeeper.android_studentorganizationsms.MyApplication;
 import com.example.oathkeeper.android_studentorganizationsms.R;
 
@@ -61,7 +61,7 @@ public class BrowseFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(context));//这里用线性显示 类似于listview
 //        mRecyclerView.setLayoutManager(new GridLayoutManager(this, 2));//这里用线性宫格显示 类似于grid view
 //        mRecyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, OrientationHelper.VERTICAL));//这里用线性宫格显示 类似于瀑布流
-        recyclerView.setAdapter(new NormalRecyclerViewAdapter(context));
+        recyclerView.setAdapter(new BrowserAdapter(context));
 
         return view;
     }
