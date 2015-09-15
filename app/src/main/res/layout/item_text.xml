@@ -27,9 +27,9 @@
         android:layout_height="wrap_content"
         android:text="结束:2015.09.16 20:00"
         android:id="@+id/textView_event_end_time"
-        android:layout_below="@+id/textView_evnet_category"
-        android:layout_alignRight="@+id/textView_evnet_category"
-        android:layout_alignEnd="@+id/textView_evnet_category" />
+        android:layout_below="@+id/textView_organization_duty"
+        android:layout_alignRight="@+id/textView_organization_duty"
+        android:layout_alignEnd="@+id/textView_organization_duty" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
         android:layout_height="wrap_content"
         android:text="演出"
         android:textColor="@color/main_color"
-        android:id="@+id/textView_evnet_category"
+        android:id="@+id/textView_organization_duty"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
@@ -54,7 +54,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="已有7人报名"
-        android:id="@+id/textView"
+        android:id="@+id/textView_organization_number"
         android:textColor="@color/main_color"
         android:layout_below="@+id/textView_detail"
         android:layout_alignRight="@+id/textView_detail"
@@ -80,7 +80,7 @@
         android:background="@color/main_color"
         android:textColor="@color/text_color_light"
         android:id="@+id/button_attend"
-        android:layout_alignTop="@+id/textView"
+        android:layout_alignTop="@+id/textView_organization_number"
         android:layout_centerHorizontal="true" />
 
     <ImageView

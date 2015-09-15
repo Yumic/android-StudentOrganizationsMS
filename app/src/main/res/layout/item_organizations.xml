@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/pq"
+        android:scaleType="fitStart"
+        android:layout_above="@+id/textView_organization_name"
+        />
+
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@drawable/selector_rect_item">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分为前端、后台、Android、IOS、视觉、游戏六个小组，这是一个大家可以在一起愉快地敲代码的地方，后面的朋友们举起你的双手~"
+            android:id="@+id/textView_detail"
+            android:layout_below="@+id/textView_organization_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="目前成员15人"
+            android:id="@+id/textView_organization_number"
+            android:textColor="@color/main_color"
+            android:layout_below="@+id/textView_detail"
+            android:layout_alignRight="@+id/textView_detail"
+            android:layout_alignEnd="@+id/textView_detail"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="负责人"
+            android:textColor="@color/main_color"
+            android:id="@+id/textView_organization_duty"
+            android:layout_alignTop="@+id/textView_organization_number"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ING工作室"
+            android:textSize="@dimen/item_text_title"
+            android:id="@+id/textView_organization_name"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

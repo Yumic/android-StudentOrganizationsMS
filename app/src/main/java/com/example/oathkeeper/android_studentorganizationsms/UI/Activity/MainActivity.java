@@ -16,7 +16,12 @@ import android.support.v4.widget.DrawerLayout;
 
 import com.example.oathkeeper.android_studentorganizationsms.R;
 import com.example.oathkeeper.android_studentorganizationsms.UI.Fragment.BrowseFragment;
+import com.example.oathkeeper.android_studentorganizationsms.UI.Fragment.ManageFragment;
+import com.example.oathkeeper.android_studentorganizationsms.UI.Fragment.MyNotificationFragment;
 import com.example.oathkeeper.android_studentorganizationsms.UI.Fragment.NavigationDrawerFragment;
+import com.example.oathkeeper.android_studentorganizationsms.UI.Fragment.ParticipateFragment;
+import com.example.oathkeeper.android_studentorganizationsms.UI.Fragment.SettingFragment;
+
 /**
  * 主界面Activity
  * Created by Oathkeeper on 2015/9/7.
@@ -58,9 +63,18 @@ public class MainActivity extends AppCompatActivity
             case 0:
                 fragment= new BrowseFragment();
                 break;
-            default:
-                fragment= new BrowseFragment();
+            case 1:
+                fragment = new ParticipateFragment();
                 break;
+            case 2:
+                fragment = new ManageFragment();
+                break;
+            case 3:
+                fragment =new MyNotificationFragment();
+                break;
+            default:
+                break;
+
 
         }
 
@@ -119,7 +133,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_search) {
+            return true;
+        }
+
+        if (id == R.id.action_screen) {
             return true;
         }
 

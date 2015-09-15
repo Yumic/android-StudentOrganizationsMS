@@ -15,12 +15,12 @@ import com.example.oathkeeper.android_studentorganizationsms.R;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 
-public class BrowserAdapter extends RecyclerView.Adapter<BrowserAdapter.ViewHolder> {
+public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.ViewHolder> {
     private final LayoutInflater mLayoutInflater;
     private final Context mContext;
     private String[] mTitles;
 
-    public BrowserAdapter(Context context) {
+    public NotificationAdapter(Context context) {
         mTitles = context.getResources().getStringArray(R.array.titles);
         mContext = context;
         mLayoutInflater = LayoutInflater.from(context);
@@ -60,9 +60,9 @@ public class BrowserAdapter extends RecyclerView.Adapter<BrowserAdapter.ViewHold
         TextView textViewEventEndTime;
         @Bind(R.id.textView_event_location)
         TextView textViewEventLocation;
-        @Bind(R.id.textView_evnet_category)
+        @Bind(R.id.textView_organization_duty)
         TextView textViewEvnetCategory;
-        @Bind(R.id.textView)
+        @Bind(R.id.textView_organization_number)
         TextView textView;
         @Bind(R.id.textView_detail)
         TextView textViewDetail;
